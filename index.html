@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Password Generator Tool</title>
+  <meta name="description" content="Generate strong, secure, random passwords instantly with our free online Password Generator. Customizable length, symbols, numbers & one-click copy. 100% private." />
+  <meta name="keywords" content="password generator, free password generator, strong password, secure password, random password" />
+  <meta name="author" content="Password Generator" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Free Password Generator Tool" />
+  <meta property="og:description" content="Generate strong, secure, random passwords instantly. Free, fast, and private." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="./index.html" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%234f46e5'/%3E%3Ctext x='50' y='66' font-family='Inter,sans-serif' font-size='58' font-weight='700' text-anchor='middle' fill='white'%3EP%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand" data-testid="brand-link">
+        <span class="brand-logo">P</span>
+        <span>Password Generator</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" data-testid="nav-toggle"><span></span></button>
+      <ul class="nav-links" data-testid="nav-links">
+        <li><a href="index.html" class="active" data-testid="nav-home">Home</a></li>
+        <li><a href="about.html" data-testid="nav-about">About</a></li>
+        <li><a href="privacy.html" data-testid="nav-privacy">Privacy</a></li>
+        <li><a href="disclaimer.html" data-testid="nav-disclaimer">Disclaimer</a></li>
+        <li><a href="contact.html" data-testid="nav-contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">100% Free · No Signup · Private</span>
+        <h1>Free Secure Password Generator</h1>
+        <p class="subhead">Create strong, unique passwords in seconds. Everything runs in your browser — fast, secure, and never stored on any server.</p>
+        <div class="hero-cta">
+          <a href="#tool" class="btn btn-primary" data-testid="hero-cta">Generate Password</a>
+          <a href="#how" class="btn btn-outline" data-testid="hero-learn">How it works</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOL -->
+    <section id="tool" style="padding-top: 24px;">
+      <div class="container">
+        <div class="tool-wrap" data-testid="tool-wrap">
+
+          <div class="output-row">
+            <div class="output-box" data-testid="password-output" aria-live="polite">—</div>
+            <button class="btn btn-primary copy-btn" data-testid="copy-btn" type="button">Copy</button>
+          </div>
+
+          <div class="strength">
+            <div class="strength-bar" data-testid="strength-bar"></div>
+          </div>
+          <div class="strength-label" data-testid="strength-label">
+            <span>Strength</span>
+            <span data-testid="strength-text">—</span>
+          </div>
+
+          <div class="length-row">
+            <label for="length">Length</label>
+            <input id="length" type="range" min="6" max="48" value="16" data-testid="length-slider" />
+            <span class="length-value" data-testid="length-value">16</span>
+          </div>
+
+          <div class="options-grid">
+            <label class="option">
+              <input type="checkbox" checked data-testid="opt-uppercase" /> Uppercase (A-Z)
+            </label>
+            <label class="option">
+              <input type="checkbox" checked data-testid="opt-lowercase" /> Lowercase (a-z)
+            </label>
+            <label class="option">
+              <input type="checkbox" checked data-testid="opt-numbers" /> Numbers (0-9)
+            </label>
+            <label class="option">
+              <input type="checkbox" checked data-testid="opt-symbols" /> Symbols (!@#$…)
+            </label>
+          </div>
+
+          <button class="btn btn-primary btn-block" data-testid="generate-btn" type="button">Generate New Password</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>How It Works</h2>
+          <p>Three simple steps to a rock-solid password — no account required.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="step-num">1</div>
+            <h3>Choose your length</h3>
+            <p>Slide to pick any password length between 6 and 48 characters — longer is always stronger.</p>
+          </div>
+          <div class="card">
+            <div class="step-num">2</div>
+            <h3>Select character types</h3>
+            <p>Toggle uppercase, lowercase, numbers, and symbols to match a site's password requirements.</p>
+          </div>
+          <div class="card">
+            <div class="step-num">3</div>
+            <h3>Generate & Copy</h3>
+            <p>Hit generate, copy to clipboard with one click, and paste wherever you need it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section id="why">
+      <div class="container">
+        <div class="section-head">
+          <h2>Why Use This Tool</h2>
+          <p>Built for people who care about security but don't have time to waste.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Cryptographically Secure</h3>
+            <p>Passwords are generated using your browser's built-in crypto API — the same standard used by banks.</p>
+          </div>
+          <div class="card">
+            <div class="icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg>
+            </div>
+            <h3>100% Private</h3>
+            <p>Everything runs locally in your browser. We never see, log, or store a single password — ever.</p>
+          </div>
+          <div class="card">
+            <div class="icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+            </div>
+            <h3>Lightning Fast</h3>
+            <p>No ads, no signups, no tracking. Just a fast, clean tool you can use any time on any device.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Frequently Asked Questions</h2>
+          <p>Quick answers to the most common questions about our password generator.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item" data-testid="faq-1">
+            <summary>Is this password generator really free?</summary>
+            <p>Yes — it is 100% free to use, with no signup, no ads, and no limits on how many passwords you generate.</p>
+          </details>
+          <details class="faq-item" data-testid="faq-2">
+            <summary>Are my generated passwords stored anywhere?</summary>
+            <p>No. All password generation happens locally in your browser using the Web Crypto API. Nothing is ever sent to our servers.</p>
+          </details>
+          <details class="faq-item" data-testid="faq-3">
+            <summary>What makes a password strong?</summary>
+            <p>A strong password is long (16+ characters), uses a mix of uppercase, lowercase, numbers, and symbols, and is unique to each account. Our tool makes generating one effortless.</p>
+          </details>
+          <details class="faq-item" data-testid="faq-4">
+            <summary>Can I use the same password everywhere?</summary>
+            <p>No — please don't. Reusing passwords means one data breach can compromise all your accounts. Use a unique password per service, and consider a password manager.</p>
+          </details>
+          <details class="faq-item" data-testid="faq-5">
+            <summary>Does this work offline?</summary>
+            <p>Once the page is loaded, yes. All generation logic lives in the browser, so it continues to work even without an internet connection.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="brand">
+            <span class="brand-logo">P</span>
+            <span>Password Generator</span>
+          </div>
+          <p>Free, private, and cryptographically secure password generator — built to keep your digital life safe.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © <span data-testid="current-year">2025</span> Password Generator. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" data-testid="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

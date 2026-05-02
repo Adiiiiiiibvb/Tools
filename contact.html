@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Password Generator</title>
+  <meta name="description" content="Get in touch with Password Generator. Email us with feedback, questions, or suggestions." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%234f46e5'/%3E%3Ctext x='50' y='66' font-family='Inter,sans-serif' font-size='58' font-weight='700' text-anchor='middle' fill='white'%3EP%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand"><span class="brand-logo">P</span><span>Password Generator</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" data-testid="nav-toggle"><span></span></button>
+      <ul class="nav-links" data-testid="nav-links">
+        <li><a href="index.html" data-testid="nav-home">Home</a></li>
+        <li><a href="about.html" data-testid="nav-about">About</a></li>
+        <li><a href="privacy.html" data-testid="nav-privacy">Privacy</a></li>
+        <li><a href="disclaimer.html" data-testid="nav-disclaimer">Disclaimer</a></li>
+        <li><a href="contact.html" class="active" data-testid="nav-contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Contact</span>
+      <h1>Get In Touch</h1>
+      <p class="subhead" style="max-width:620px;margin:16px auto 0;">Have feedback, a suggestion, or a question? We'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <section class="page-content">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <h3>Email us directly</h3>
+          <p>The fastest way to reach us is by email. We typically reply within 1–2 business days.</p>
+          <a class="email-link" href="mailto:Aadithakur6114@gmail.com" data-testid="contact-email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+            Aadithakur6114@gmail.com
+          </a>
+          <p class="meta">
+            You can also use the form — submitting it will open your email client pre-filled with your message.
+          </p>
+        </div>
+
+        <form class="contact-form" data-testid="contact-form" novalidate>
+          <div class="form-row">
+            <label for="c-name">Your Name</label>
+            <input id="c-name" name="name" type="text" placeholder="Jane Doe" required data-testid="contact-name" />
+          </div>
+          <div class="form-row">
+            <label for="c-email">Your Email</label>
+            <input id="c-email" name="email" type="email" placeholder="you@example.com" required data-testid="contact-email-input" />
+          </div>
+          <div class="form-row">
+            <label for="c-subject">Subject</label>
+            <input id="c-subject" name="subject" type="text" placeholder="How can we help?" data-testid="contact-subject" />
+          </div>
+          <div class="form-row">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" rows="5" placeholder="Write your message here…" required data-testid="contact-message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" data-testid="contact-submit">Send Message</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="brand"><span class="brand-logo">P</span><span>Password Generator</span></div>
+          <p>Free, private, and cryptographically secure password generator — built to keep your digital life safe.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span data-testid="current-year">2025</span> Password Generator. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

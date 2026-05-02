@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Password Generator</title>
+  <meta name="description" content="Read our privacy policy to understand how we protect your privacy — spoiler: we don't collect passwords or track you." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%234f46e5'/%3E%3Ctext x='50' y='66' font-family='Inter,sans-serif' font-size='58' font-weight='700' text-anchor='middle' fill='white'%3EP%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand"><span class="brand-logo">P</span><span>Password Generator</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" data-testid="nav-toggle"><span></span></button>
+      <ul class="nav-links" data-testid="nav-links">
+        <li><a href="index.html" data-testid="nav-home">Home</a></li>
+        <li><a href="about.html" data-testid="nav-about">About</a></li>
+        <li><a href="privacy.html" class="active" data-testid="nav-privacy">Privacy</a></li>
+        <li><a href="disclaimer.html" data-testid="nav-disclaimer">Disclaimer</a></li>
+        <li><a href="contact.html" data-testid="nav-contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Legal</span>
+      <h1>Privacy Policy</h1>
+      <p class="meta" style="margin-top:12px;">Last updated: January 2025</p>
+    </div>
+  </section>
+
+  <section class="page-content">
+    <div class="container prose">
+      <h2>Overview</h2>
+      <p>
+        Your privacy is important to us. This Privacy Policy explains what information — if any —
+        is collected when you use Password Generator (the "Service"), and how we handle it.
+      </p>
+
+      <h2>Passwords You Generate</h2>
+      <p>
+        All password generation happens entirely in your browser using the Web Crypto API.
+        <strong>We never see, transmit, log, or store any password you generate.</strong> They exist
+        only on your device, in your browser's memory.
+      </p>
+
+      <h2>Information We Collect</h2>
+      <p>We do not require accounts, logins, or any personal information to use this Service.</p>
+      <p>
+        Our web host and any third-party analytics (if present) may collect standard technical data such as
+        browser type, operating system, approximate region, and page views — aggregated and anonymous —
+        to help us improve the site. No personally identifying information is collected.
+      </p>
+
+      <h2>Cookies</h2>
+      <p>
+        This site does not use tracking cookies. Any cookies set are strictly essential for the
+        website to function.
+      </p>
+
+      <h2>Third-Party Services</h2>
+      <p>
+        We load the Inter font from Google Fonts to keep the site lightweight. Please refer to
+        Google's privacy policy for details on how they handle requests.
+      </p>
+
+      <h2>Children's Privacy</h2>
+      <p>
+        The Service is not directed to children under 13. We do not knowingly collect personal
+        information from children.
+      </p>
+
+      <h2>Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. Any changes will be posted on this
+        page with an updated revision date.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        If you have any questions about this Privacy Policy, please
+        <a href="contact.html">contact us</a>.
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="brand"><span class="brand-logo">P</span><span>Password Generator</span></div>
+          <p>Free, private, and cryptographically secure password generator — built to keep your digital life safe.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span data-testid="current-year">2025</span> Password Generator. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
